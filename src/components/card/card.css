@@ -1,4 +1,7 @@
 .card {
   border: black 1px solid;
   padding: 1em;
+  background: rgb(60, 62, 68);
+  color: white;
+  border-radius: 10px;
 }
