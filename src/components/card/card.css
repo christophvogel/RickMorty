@@ -2,8 +2,27 @@
   border: black 1px solid;
   padding: 1em;
   background: rgb(60, 62, 68);
-  color: white;
+  color: rgb(255, 255, 255);
   border-radius: 10px;
+  perspective: 1000px;
+  text-align: center;
+  transition: 0.8s;
+  transform-style: preserve-3d;
+}
+
+.card:hover {
+  transform: rotateY(180deg);
+}
+
+.card__front,
+.card__back {
+  backface-visibility: hidden;
+}
+
+.card__back {
+  background: rgb(60, 62, 68);
+  color: rgb(255, 255, 255);
+  transform: rotateY(180deg);
 }
 
 .container {
